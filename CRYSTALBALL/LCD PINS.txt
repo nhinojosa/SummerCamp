@@ -1,0 +1,16 @@
+LED CATHODE(LED-) = GND(-)
+LED ANODE(LED+) = PWR(+)
+DB7 = PIN2
+DB6 = PIN3
+DB5 = PIN4
+DB4 = PIN5
+DB3 =
+DB2 = 
+DB1 =
+DB0 =
+ENABLE(E) = PIN11
+R/W = GND(-)
+Register Select(RS) = PIN12
+Contrast(V0) = Middle pin of potentiometer
+VCC (Power) = PWR(+)
+GND = GND(-)
