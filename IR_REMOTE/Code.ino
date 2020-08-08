@@ -12,7 +12,7 @@ void translateIR() // takes action based on IR code received
 // describing Remote IR codes 
 
 {
-
+  Serial.println(results.value, HEX);
   switch(results.value)
 
   {
@@ -27,16 +27,16 @@ void translateIR() // takes action based on IR code received
   case 0xFF906F: Serial.println("UP");    break;
   case 0xFF9867: Serial.println("EQ");    break;
   case 0xFFB04F: Serial.println("ST/REPT");    break;
-  case 0xFF6897: Serial.println("0");    break;
-  case 0xFF30CF: Serial.println("1");    break;
-  case 0xFF18E7: Serial.println("2");    break;
-  case 0xFF7A85: Serial.println("3");    break;
-  case 0xFF10EF: Serial.println("4");    break;
-  case 0xFF38C7: Serial.println("5");    break;
-  case 0xFF5AA5: Serial.println("6");    break;
-  case 0xFF42BD: Serial.println("7");    break;
-  case 0xFF4AB5: Serial.println("8");    break;
-  case 0xFF52AD: Serial.println("9");    break;
+  case 0x20DF8877: Serial.println("1");    break;
+  case 0x20DF48B7: Serial.println("2");    break;
+  case 0x20DFC837: Serial.println("3");    break;
+  case 0x20DF28D7: Serial.println("4");    break;
+  case 0x20DFA857: Serial.println("5");    break;
+  case 0x20DF6897: Serial.println("6");    break;
+  case 0x20DFE817: Serial.println("7");    break;
+  case 0x20DF18E7: Serial.println("8");    break;
+  case 0x20DF9867: Serial.println("9");    break;
+  case 0x20DF08F7: Serial.println("0");    break;
   case 0xFFFFFFFF: Serial.println(" REPEAT");break;  
 
   default: 
