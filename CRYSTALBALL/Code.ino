@@ -26,7 +26,7 @@
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 // set up a constant for the tilt switch pin
-const int switchPin = 6;
+const int switchPin = 13;
 
 // variable to hold the value of the switch pin
 int switchState = 0;
