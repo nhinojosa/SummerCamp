@@ -7,6 +7,7 @@ int prevSwitchState = 0;
 
 void setup()
 {
+  randomSeed(analogRead(0));
   Serial.begin(9600);
   pinMode(13, INPUT);
   pinMode(2, OUTPUT);
